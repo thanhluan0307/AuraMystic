@@ -16,13 +16,12 @@ import { AstrologyScreen } from './src/screens/AstrologyScreen';
 import { TuViScreen } from './src/screens/TuViScreen';
 import { NatalChartScreen } from './src/screens/NatalChartScreen';
 import { MysticChatScreen } from './src/screens/MysticChatScreen';
-import { Cosmos3DScreen } from './src/screens/Cosmos3DScreen';
 import { NotesModal } from './src/components/NotesModal';
 import { DraggableNotesFab } from './src/components/DraggableNotesFab';
 import { AppSplashScreen } from './src/components/AppSplashScreen';
 import { getStoredNotes } from './src/services/storageService';
 
-type TabKey = 'tarot' | 'astrology' | 'tuvi' | 'natal' | 'cosmos' | 'oracle';
+type TabKey = 'tarot' | 'astrology' | 'tuvi' | 'natal' | 'oracle';
 
 interface TabItem {
   key: TabKey;
@@ -36,7 +35,6 @@ const TABS: TabItem[] = [
   { key: 'astrology', label: 'Chiêm Tinh', iconName: 'moon-outline', iconNameFocused: 'moon' },
   { key: 'tuvi', label: 'Tử Vi', iconName: 'compass-outline', iconNameFocused: 'compass' },
   { key: 'natal', label: 'Bản Đồ Sao', iconName: 'planet-outline', iconNameFocused: 'planet' },
-  { key: 'cosmos', label: 'Vũ Trụ 3D', iconName: 'telescope-outline', iconNameFocused: 'telescope' },
   { key: 'oracle', label: 'Tiên Tri AI', iconName: 'chatbubbles-outline', iconNameFocused: 'chatbubbles' },
 ];
 
@@ -80,8 +78,6 @@ function ThemedApp() {
         return <TuViScreen />;
       case 'natal':
         return <NatalChartScreen />;
-      case 'cosmos':
-        return <Cosmos3DScreen />;
       case 'oracle':
         return <MysticChatScreen />;
     }
