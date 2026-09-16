@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "AuraMystic - Tarot & Chiêm Tinh",
+    "name": "AuraMystic",
     "slug": "auramystic",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -35,7 +35,14 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/app-favicon.png"
-    }
+      "favicon": "./assets/app-favicon.png",
+      "output": "single"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "73adda53-e573-4207-b793-32491261114f"
+      }
+    },
+    "owner": "luanlee"
   }
 }
