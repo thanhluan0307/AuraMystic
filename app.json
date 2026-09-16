@@ -1,25 +1,41 @@
 {
   "expo": {
-    "name": "TL",
-    "slug": "TL",
+    "name": "AuraMystic - Tarot & Chiêm Tinh",
+    "slug": "auramystic",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080514",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#080514",
+          "image": "./assets/app-icon-foreground.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#080514",
+            "image": "./assets/app-icon-foreground.png"
+          }
+        }
+      ],
+      "expo-image"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#080514",
+        "foregroundImage": "./assets/app-icon-foreground.png",
+        "monochromeImage": "./assets/app-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/app-favicon.png"
     }
   }
 }
